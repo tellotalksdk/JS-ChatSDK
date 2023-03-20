@@ -45,7 +45,8 @@ TelloApiClient.Builder builder = new TelloApiClient.Builder()
                 .projectToken("projectToken")
                 .CRYPTO_LIB_KEY("")
                 .CRYPTO_LIB_IV("")
-              .notificationIcon("Drawable Resource for notification Small Icon");
+                .setContext(getApplicationContext())
+                .notificationIcon("Drawable Resource for notification Small Icon");
         telloApiClient = builder.build();
 ```
  After initialization you can use **TelloApiClient** object to access SDK features.
@@ -154,8 +155,8 @@ MyApplication.getInstance().telloApiClient.setPackageName("Entry Point of applic
     <color name="submit_button_vote">#FFE500</color>
     <color name="timeOutgoingColor">#000000</color>
     <color name="timeIncomingColor">#000000</color>
-    <color name="audioRecordButtomColor">#ffc62828</color>
-    <color name="messageButtomColor">#ffc62828</color>
+    <color name="audioRecordButtonColor">#ffc62828</color>
+    <color name="messageButtonColor">#ffc62828</color>
 ```
 
 <img src="chat_labels.jpg" alt="UI Customization"/>
