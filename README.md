@@ -140,6 +140,18 @@ Getting Event from broadcast message in One Way Communication.
 MyApplication.getInstance().telloApiClient.setPackageName("Entry Point of application");
 ```
 
+### Release Guide
+Add Proguard rules for release build
+```java
+//Proguard Rules
+-keepattributes  * Annotation *
+-keepclassmembers class ** {
+@org.greenrobot.eventbus.Subscribe <method>;
+}ßßßß
+-keep enum org.greenrobot.eventbus.ThreadMode {*;}
+-keep class com.tilismtech.** { *; }
+```
+
 ### Color Changes on UI interface
 
 ```java
