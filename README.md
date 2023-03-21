@@ -37,7 +37,7 @@ authToken=jp_p6dmteat0vu8e805pm7dl1k5c0
 
 ## Usage
 
-Extend your application class with *TelloApplication* class in TelloSDK. Initialize **TelloTalkSdk** client before using any of its features
+Extend your application class with *TelloApplication* class in TelloSDK. Initialize **TelloTalkSdk** client before using any of its features.
 
 ```java
 TelloApiClient.Builder builder = new TelloApiClient.Builder()
@@ -98,7 +98,7 @@ After this method return success you will start receiving messages and can acces
 
 ## Way to enter TelloTalkSdk UI
 
-If you do not have chatlist access you can open individual chat using following method.
+If you do not have chatlist access you can open individual chat using following method.Before calling this function user need to grant storage permission on application level . 
  ```java
  telloApiClient.openCorporateChat(Activity activity,String initiateMsg,String customData)
 ```
