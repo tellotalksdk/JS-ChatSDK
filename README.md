@@ -147,7 +147,7 @@ Add Proguard rules for release build
 -keepattributes  * Annotation *
 -keepclassmembers class ** {
 @org.greenrobot.eventbus.Subscribe <method>;
-}ßßßß
+}
 -keep enum org.greenrobot.eventbus.ThreadMode {*;}
 -keep class com.tilismtech.** { *; }
 ```
