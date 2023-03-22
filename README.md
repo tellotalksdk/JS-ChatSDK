@@ -12,7 +12,7 @@ You must have **AccessKey** and **ProjectToken** to use this SDK in your applica
 Add SDK dependency in your app build.gradle as following:
 
 ```java
-implementation 'com.github.tellotalksdk:tellotalksdk_corporate_chat:js_zindigi_2.1'
+implementation 'com.github.tellotalksdk:tellotalksdk_corporate_chat:askari_0.2'
 ```
 in Project build.gradle
 ```java
@@ -36,8 +36,8 @@ authToken=jp_p6dmteat0vu8e805pm7dl1k5c0
 
 
 ## Usage
-
-Extend your application class with *TelloApplication* class in TelloSDK. Initialize **TelloTalkSdk** client before using any of its features.
+//Extend your application class with *TelloApplication* class in TelloSDK
+Initialize **TelloTalkSdk** client before using any of its features.
 
 ```java
 TelloApiClient.Builder builder = new TelloApiClient.Builder()
@@ -46,6 +46,7 @@ TelloApiClient.Builder builder = new TelloApiClient.Builder()
                 .CRYPTO_LIB_KEY("")
                 .CRYPTO_LIB_IV("")
                 .setContext(getApplicationContext())
+                .setApplication(this)
                 .notificationIcon("Drawable Resource for notification Small Icon");
         telloApiClient = builder.build();
 ```
